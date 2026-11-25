@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f4">
+    <meta name="description" content="자료구조와 알고리즘 강의 내용을 순서대로 정리한 학습 노트">
+    <title>자료구조 · 알고리즘 | 스터디 노트</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="스터디 노트 홈">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>STUDY<span class="brand-light">.NOTES</span></span>
+      </a>
+      <span class="topbar-label">LEARNING ARCHIVE&nbsp; / &nbsp;2026</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> COMPUTER SCIENCE · COURSE NOTES</div>
+        <h1 id="page-title">자료구조 <span class="title-amp">&</span><br>알고리즘</h1>
+        <p class="intro-copy">문제를 구조적으로 바라보고, 더 나은 해답을 찾는 여정.<br>강의 노트를 한곳에 모아 차근차근 정리했어요.</p>
+        <div class="course-meta">
+          <span><span class="meta-icon" aria-hidden="true">▤</span> 전체 강의 <strong id="lesson-count">0</strong></span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span><span class="meta-icon" aria-hidden="true">◷</span> 기초부터 심화까지</span>
+        </div>
+      </section>
+
+      <section class="lessons-section" aria-labelledby="lessons-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">YOUR CURRICULUM</p>
+            <h2 id="lessons-title">강의 노트 <span class="heading-period">.</span></h2>
+          </div>
+          <div class="curriculum-controls">
+            <div class="view-controls" role="group" aria-label="강의 보기 방식">
+              <button class="sort-button view-button is-active" id="card-view-button" type="button" aria-pressed="true" aria-controls="lesson-grid">카드 보기</button>
+              <button class="sort-button view-button" id="tree-view-button" type="button" aria-pressed="false" aria-controls="curriculum-tree">연관 트리</button>
+            </div>
+            <div class="sort-controls" id="sort-controls" role="group" aria-label="강의 정렬">
+              <button class="sort-button is-active" id="sort-order" type="button" aria-pressed="true" aria-label="강의 순서순, 현재 오름차순">강의 순서순 <span aria-hidden="true">↑</span></button>
+              <button class="sort-button" id="sort-title" type="button" aria-pressed="false" aria-label="제목순 정렬">제목순 <span aria-hidden="true">A–Z</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="lesson-grid" id="lesson-grid" aria-live="polite"></div>
+        <nav class="curriculum-tree" id="curriculum-tree" aria-label="강의 주제 연관 트리" hidden>
+          <p class="tree-caption">주제의 연결 흐름을 따라가며 각 강의 PDF를 열 수 있습니다.</p>
+          <div id="curriculum-tree-content"></div>
+        </nav>
+        <p class="sort-note">정렬은 브라우저에서 직접 구현한 merge sort로 처리합니다.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>STUDY.NOTES</span>
+      <span>작은 개념이 모여 큰 흐름이 됩니다.</span>
+      <span>KEEP LEARNING&nbsp; ↗</span>
+    </footer>
+  </body>
+</html>
